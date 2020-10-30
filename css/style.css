@@ -1,9 +1,8 @@
-*{
+body{
     box-sizing: border-box;
-}
-html,body{
-    background-color: white;
-    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 a{
     text-decoration: none;
@@ -13,91 +12,95 @@ a:hover{
     color:initial;
     text-decoration: none;
 }
-#nav{
-    position: absolute;
-    width: 1440px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    justify-content: right;
-    
-}
-.logo{
-    position: absolute;
-    width: 44.99px;
-    height: 34.36px;
-    left: 676px;
-    top: 25px;
-}
-.logo-2{
-    position: absolute;
-    width: 40.95px;
-    height: 23.32px;
-    left: 722.25px;
-    top: 35.95px;
-}
-#nav a{
-    display: inline;
-    font-family: 'Montserrat', sans-serif;
+#nav-link1{
     margin-left: 60px;
 }
-#nav a img{
-    display: inline;
+#nav-link2{
+    margin-right: 80px;
+}
+.nav-wrap{
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    justify-content: right;
+    z-index: 1;
+}
+#hero-section{
+    margin-bottom: 190px;
+}
+#categorie-section{
+    margin-bottom: 190px;
+}
+.cat-info{
+    margin-bottom: 190px;
+}
+.hero-img1{
+    height: 800px;
+    z-index: -1;
+    background: url(../assets/images/hero-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* change the background color */
+.navbar-custom {
+    background-color:rgba(255, 255, 255, 0.7);
+    padding: 10px;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #333333;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color:#333333;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link:hover {
+    color:#F3558E;
+}
+.nav-item{
+    margin-left: 50px;
+}
+.navbar-light  {
+    background-color:rgba(255, 255, 255, 0.7);
+}
+.logo{
+    text-align: center;
+    margin-left: 80px; 
+    width: 94.99px;
+    height: 44.36px;
+}
+@media only screen and (max-width: 1280px) {
+   
+    #nav-link2{
+        margin-right: 30px;
+    }
+    .nav-item{
+        margin-left: 30px;
+    }
+
 }
 
-#home{
-    height: 50px;
-    width: 57px;
-    left: 816px;
-    top: 35.95px;
-    border-radius: nullpx;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-}
-#links{
-    margin-left: 90px;
-}
-#search-icon{
-    position: absolute;
-    left: 20.5;
-    right: 100.48%;
-    top: 12.5%;
-    bottom: 12.48%;
-    padding-right: 8px;
-}
-#search{
-    position: absolute;
-    width: 64px;
-    height: 22px;
-    left: 819px;
-}
-#links-2{
-    margin-left: 340px;
-}
 #cart{
     height: 17px;
     top: 2.999420166015625px;
     border-radius: 0px;
+    margin-right: 5px;
 }
-#rec-4{
-    position: absolute;
-    width: 910px;
-    height: 840px;
-    left: 530px;
-    z-index: -1;
-    background: url(../assets/images/hero-1.png)
+#dot-link{
+    margin-left: 30px;
 }
+
 .desc{
     position: absolute;
-    width: 692px;
     height: 333px;
     left: 360px;
-    top: 150px;
-    font-family: Yeseva One;
+    top: 160px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 280px;
@@ -105,14 +108,24 @@ a:hover{
     transform: rotate(-90deg);
     z-index: 1;
 }
+@media only screen and (max-width: 1280px) {
+   
+    .desc{
+        left:0px;
+        margin-left: 300px;
+        font-size: 200px;
+    }
+
+}
+.hero-text{
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 150px;
+    
+}
 .sub-txt{
-    position: absolute;
     width: 225px;
     height: 29px;
-    left: 183px;
-    top: 252px;
-
-    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -121,12 +134,8 @@ a:hover{
     color: #626262;
 }
 .head-txt{
-    position: absolute;
-    width: 517px;
-    height: 92px;
-    left: 183px;
-    top: 283px;
-
+    display: block;
+    
     font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
@@ -135,77 +144,29 @@ a:hover{
 
     color: #333333;
 }
-.head-txt-2{
-    position: absolute;
-    width: 517px;
-    height: 92px;
-    left: 183px;
-    top: 375px;
-
-    font-family: 'Yeseva One', cursive;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 80px;
-    line-height: 92px;
-
-    color: #333333;
+.btn-1{
+    margin-top: 40px;
+    color: white;
 }
-.sub-txt-2{
-    position: absolute;
-    width: 225px;
-    height: 29px;
-    left: 183px;
-    top: 469px;
-
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-
-    color: #626262;
-
-}
-.hero-section{
-    margin-bottom: 30px;
-}
-@media only screen and (max-width: 759px) {
-    .hero-section{
-        max-width: 100%;
-    }
+.shop-btn{
+    padding: 8px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    background-color: #F3558E;
+    border: none;
 }
 .line-vector{
     position: absolute;
     width: 56px;
     height: 0px;
-    left: 119px;
-    top: 1079px;
     display: inline;
     border: 3px solid #F3558E;
 }
-.head-txt-3{
-    position: absolute;
-    width: 952px;
-    height: 69px;
-    left: 127.5px;
-    top: 1109px;
-
-    font-family: 'Yeseva One', cursive;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 69px;
-
-    color: #333333;
-}
-
 #p-cat{
-    position: absolute;
+    position: relative;
     width: 409px;
     height: 29px;
-    left: 189px;
-    top: 1064px;
-
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -213,56 +174,74 @@ a:hover{
     line-height: 29px;
     display: inline;
     color: #F3558E;
+    
+}
+.cat-text{
+    margin-left: 119px;
+}
+.head-txt-1{
+    top: 20px;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 69px;
+    margin-bottom: 50px;
+    color: #333333;
+}
+.spacing{
+    margin-bottom: 10px;
 }
 .desc-2{
-    position: absolute;
-    width: 692px;
-    height: 333px;
-    left: 749px;
-    top: 1033px;
-
     font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 280px;
-    
+    float: left;
+    margin-left: 680px;
+    margin-top: 1060px;
     /* identical to box height */
-
-
+    z-index: -1;
     color: rgba(243, 85, 142, 0.06);
 }
+@media only screen and (max-width: 1280px) {
+   
+    .desc-2{
+        font-size: 160px;
+    }
+
+}
 .elips-1{
-    position: absolute;
+   
     width: 50px;
     height: 50px;
-    left: 1000px;
-    top: 1075px;
+    margin-left: 5px;
+    
     border-radius: 100%;
     background: #FFFFFF;
     box-shadow: 0px 0px 2px #DBDBDB;
 }
 .elips-2{
-    position: absolute;
+  
     width: 50px;
     height: 50px;
-    left: 1090px;
-    top: 1075px;
+    
+    
     border-radius: 100%;
     background: #FFFFFF;
     box-shadow: 0px 0px 2px #DBDBDB;
 }
 #arrow-1{
-    position: absolute;
     left: 9px;
     right: 0px;
     top: 10.22px;
     bottom: 60.66px;
-   
+    padding: 10px;
     color: #ABA9A9;
     transform: rotate(-180deg);
 }
 #arrow-2{
-    position: absolute;
+    padding: 10px;
     left: 9px;
     right: 0px;
     top: 10.22px;
@@ -271,22 +250,29 @@ a:hover{
     color: #ABA9A9;
    
 }
-
-#cat-img-1{
-    position: absolute;
-    width: 380px;
-    height: 401px;
-    left: 118px;
-    top: 1200px;
-
-    background: url(../assets/images/catimg-1.png);
+.cat-info{
+    z-index: 1;
 }
-
-.head-txt-4{
+.rowoverlay{
     position: absolute;
+    top: 0;
+    left:0;
+    z-index:-1;
+    bottom:0;
+    right:0;
+    height:100%;
+  }
+  
+  .coloverlay{
+    height: 100%;
+  }
+#cat-img-1{
+    
+    
+}
+.head-txt-4{
     width: 120px;
     height: 37px;
-    top: 430px;
     text-align: left;
     font-family: 'Yeseva One', cursive;
     font-style: normal;
@@ -294,20 +280,20 @@ a:hover{
     font-size: 32px;
     color: #333333;
 }
-
-.col-md-4 .line-vector{
-    top: 480px;
-    display: block;
-    text-align: left;
-    left: 0;
+.head-txt-5{
+    width: 120px;
+    height: 37px;
+   
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: #333333;
 }
-
-.col-md-4 p{
-    position: absolute;
+.desc-txt p{
+    margin-top: 30px;
     width: 380px;
     height: 123px;
-    top: 515px;
-
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -316,48 +302,144 @@ a:hover{
     text-align: left;
 }
 #cat-img-2{
-    position: absolute;
-    width: 380px;
-    height: 401px;
-    left: 118px;
-    top: 1450px;
-
-    background: url(../assets/images/catimg-2.png);
-}
-
-.text-wrap{
-    position: absolute;
-    top: 760px;
-    left: 118px;
-}
-.head-txt-5{
-    position: absolute;
-    width: 120px;
-    height: 37px;
-    top: 430px;
-    text-align: left;
-    font-family:'Yeseva One', cursive;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    color: #333333;
-}
-#cat-img-3{
-    position: absolute;
-    width: 380px;
-    height: 401px;
-    left: 118px;
-    top: 1200px;
-
-    background: url(../assets/images/catimg-3.png);
+    z-index: 1;
 }
 .view-all{
+    color:  #F3558E;
+    display: inline;
+    margin-right: 10px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+.desc-2-1{
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    float: left;
+    margin-top: 1970px;
+    /* identical to box height */
+    z-index: -1;
+    color: rgba(243, 85, 142, 0.06);
+}
+@media only screen and (max-width: 1280px) {
+   
+    .desc-2-1{
+        font-size: 160px;
+    }
+
+}
+.first-exp-row{
+    margin-bottom: 90px;
+}
+.price-tag{
     position: absolute;
-    width: 73px;
-    height: 22px;
-    top: 2061px;
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
+    width: 205px;
+    height: 209px;
+    top: 363px;
+    margin-left: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);
+}
+@media only screen and (max-width: 1280px) {
+   
+    .exp-row-1 .col  {
+        padding-left: 0px;
+    }
+
+}
+.price-tag-1{
+    position: absolute;
+    width: 205px;
+    height: 49px;
+    margin-left: 20px;
+    top: 465px;
+
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);
+}
+.view-btn{
+    
+        padding: 8px;
+        font-size: 18px;
+        margin-left: 450px;
+        color: white;
+        text-decoration: none;
+        background-color: #F3558E;
+        border: none;
+}
+@media only screen and (max-width: 1280px) {
+   
+    .view-btn  {
+        margin-left: 0px;
+    }
+
+}
+.rect-outline{
+    position: absolute;
+    width: 790px;
+    height: 461px;
+    top: 66px;
+    margin-left: 200px;
+    border: 10px solid rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+}
+.rec-fill{
+    position: absolute;
+    width: 730px;
+    height: 400px;
+    top: 66px;
+    margin-top: 30px;
+    margin-left: 230px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+}
+#col-img-1{
+    max-width: 100%;
+}
+@media only screen and (max-width: 1280px) {
+   
+    .rect-outline{
+        position: absolute;
+        width: 590px;
+        height: 300px;
+        top: 66px;
+        margin-left: 120px;
+        border: 10px solid rgba(255, 255, 255, 0.8);
+        box-sizing: border-box;
+        backdrop-filter: blur(20px);
+    }
+    .rec-fill{
+        position: absolute;
+        width: 530px;
+        height: 240px;
+        top: 66px;
+        margin-top: 30px;
+        margin-left: 150px;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+    }
+
+}
+.price-txt{
+    font-family:  'Yeseva One', cursive;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+
+    text-transform: capitalize;
+
+    color: #333333;
+}
+.price{
+    margin-left: 10px;
+    font-family:  'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -366,6 +448,57 @@ a:hover{
 
 
     color: #F3558E;
+}
+.price-1{
+    margin-top: 15px;
+}
+.col-txt{
+    width: 450px;
+    height: 46px;
+    margin-left: 180px;
+    margin-top: 60px;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    
+    color: #000000;
+}
+.percent-off{
+    margin-left: 250px;
+    font-family: Merienda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+
+    color: #000000;
+}
+.shop-btn-2{
+    margin-left: 270px;
+}
+@media only screen and (max-width: 1280px) {
+   
+    .col-txt{
+        width: 450px;
+        height: 26px;
+        margin-left: 70px;
+        margin-top: 20px;
+    }
+    .percent-off{
+        margin-left: 150px;
+        font-family: Merienda;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        margin-bottom: 0px;
+        color: #000000;
+    }
+    .shop-btn-2{
+        margin-top: 0px;
+        margin-left: 180px;
+    }
+    .btn-2{
+        margin-top: 0px;
+    }
 
 }
-.view-arrow
