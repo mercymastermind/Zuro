@@ -1,3 +1,6 @@
+* {
+	outline: none;
+}
 body{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -9,8 +12,12 @@ a{
     color: black;
 }
 a:hover{
-    color:initial;
+    color:#F3558E;
     text-decoration: none;
+}
+
+button:focus{
+    outline: none;
 }
 #nav-link1{
     margin-left: 60px;
@@ -72,8 +79,19 @@ a:hover{
     width: 94.99px;
     height: 44.36px;
 }
+.mobile-logo{
+    display: none;
+}
 @media only screen and (max-width: 1280px) {
-   
+    
+    .logo{
+        display: none;
+    }
+    .mobile-logo{
+        display: inline;
+        width: 94.99px;
+        height: 44.36px;
+    }
     #nav-link2{
         margin-right: 30px;
     }
@@ -82,7 +100,17 @@ a:hover{
     }
 
 }
-
+@media only screen and (max-width: 760px) {
+    
+    .logo{
+        display: none;
+    }
+    .mobile-logo{
+        display: inline;
+        width: 94.99px;
+        height: 44.36px;
+    }
+}
 #cart{
     height: 17px;
     top: 2.999420166015625px;
@@ -153,6 +181,26 @@ a:hover{
     text-decoration: none;
     background-color: #F3558E;
     border: none;
+}
+
+.mobile-addition{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    
+    #dot-link{
+        display: none;
+    }
+    .collapse .row .col-md-5:first-child{
+       text-align: center;
+       margin-left: 25%;
+    }
+    .collapse .row .col-md-5:last-child{
+        display: none;
+    }
+    .mobile-addition{
+        display: block;
+    }
 }
 .line-vector{
     position: absolute;
@@ -624,4 +672,57 @@ font-size: 200px;
 font-weight: bolder;
 top: -50px;
 color: rgba(255, 255, 255, 0.2);
+}
+
+.form .col{
+    margin-left: 30px;
+}
+#get-in-t{
+    padding: 30px;
+    padding-top: 50px;
+}
+#get-in-t img{
+    margin-right: 15px;
+    margin-top: -10px;
+}
+#get-in-t p:last-child{
+    margin-top: 10px;
+}
+.input-con{
+    padding: 30px;
+    padding-top: 50px;
+}
+.input{
+    width: 350px;
+    height: 49px;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+.input::placeholder{
+    color: white;
+}
+.sub-btn{
+    color:  #F3558E;
+    background-color: white;
+    font-size: 12px;
+    height: 49px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+.footer{
+    background: url(../assets/icons/curve-vector.png);
+    
+}
+.footer .row ul:first-child{
+    margin-left: 50px;
+}
+.foot-links{
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 30px;
 }

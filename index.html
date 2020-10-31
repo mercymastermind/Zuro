@@ -14,47 +14,58 @@
             <div class="container-fluid">
                 
                 <div class="navbar navbar-expand-md navbar-custom navbar-light" id="">
-                    <div class="row">
-                        <div class="col col-md-5">
-                            <ul class="navbar-nav mr-auto" id="nav-link1">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="index.html" > <b> Home </b><span class="sr-only">(current)</span></a>
-                                    <div class="row">
-                                        <div class="col col-md-2">
-                                            <img src="assets/icons/circle.png" alt="" id="dot-link">
+                    <a class="navbar-brand mobile-logo " href="index.html"><img src="assets/icons/logo.png" alt="" class="mobile-logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="row">
+                            <div class="col col-md-5">
+                                <ul class="navbar-nav mr-auto" id="nav-link1">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="index.html" > <b> Home </b><span class="sr-only">(current)</span></a>
+                                        <div class="row">
+                                            <div class="col col-md-2">
+                                                <img src="assets/icons/circle.png" alt="" id="dot-link">
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#explore-products">Shop</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#collection">Collections</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col col-md-2">
-                            <a href="index.html"><span><img src="assets/icons/logo.png" alt="" class="logo"></span></a>
-                        </div>
-                        <div class="col col-md-5">
-                            <ul class="navbar-nav mr-auto" id="nav-link2">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html" ><img src="assets/icons/search.png" id="search-icon" alt=""> Search <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><img src="assets/icons/profile.png" alt="">My Account</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><img src="assets/icons/cart.svg" alt="" id="cart">Cart</a>
-                                </li>
-                               
-                            </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#explore-products">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#collection">Collections</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blog</a>
+                                    </li>
+                                    <li class="nav-item mobile-addition">
+                                        <a class="nav-link" href="#"><img src="assets/icons/profile.png" alt="">Account</a>
+                                    </li>
+                                    <li class="nav-item mobile-addition">
+                                        <a class="nav-link" href="#"><img src="assets/icons/cart.svg" alt="" id="cart">Cart</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col col-md-2">
+                                <a href="index.html"><span><img src="assets/icons/logo.png" alt="" class="logo"></span></a>
+                            </div>
+                            <div class="col col-md-5">
+                                <ul class="navbar-nav mr-auto" id="nav-link2">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html" id="search"><img src="assets/icons/search.png" id="search-icon" alt=""> Search <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/icons/profile.png" alt="">My Account</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><img src="assets/icons/cart.svg" alt="" id="cart">Cart</a>
+                                    </li>
+                                
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    
             
                 </div>
             </div>
@@ -360,7 +371,7 @@
                     <div class="cat-info" id="Fashion-news">
                         <div class="row">
                             <div class="col col-lg-4 first-exp-row">
-                                <img src="assets/images/fashimg-1.png" alt="" >
+                                <img src="assets/images/fashImg-1.png" alt="" >
                                
                                 <div class="news-card">
                                     <div class="row txt">
@@ -450,16 +461,80 @@
             </div>
         </section>
 
-        <footer>
-            <form action="" class="form">
+       
+            <div  class="form">
+                <div class="row">
+                    <div class="col col-md-1">
+                       <p class="elipse">o</p>
+                      
+                    </div>
+                    <div class="col col-md-5 " id="get-in-t">
+                        <img src="assets/icons/arrow-white.png" alt=""><p class="head-txt-4" style="display: inline; color: white;">Get in Touch</p>
+                        <p style="color: white;">Subscribe for latest stories and promotions (35% sale)</p>
+                    </div>
+                    <div class="col col-md-5 input-con">
+                        <input type="text" class="input" placeholder="Enter your email"> <button class="sub-btn">Subscribe</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <footer class="footer">
                 <div class="row">
                     <div class="col col-md-4">
-                        <span> <p class="elipse">o</p></span>
+                        <ul class="foot-links">
+                            <li>
+                                <p class="fash-txt">SITEMAP</p>
+                            </li>
+                            <li>
+                                <a href="index.html"><p>Home</p></a>
+                            </li>
+                            <li>
+                                <a href="index.html"><p>Shop</p></a>
+                            </li>
+                            <li>
+                                <a href="index.html"><p>Collection</p></a>
+                            </li>
+                            <li>
+                                <a href="index.html"><p>Blog</p></a>
+                            </li>
+                        </ul>
                     </div>
-                   
+                    <div class="col col-md-4">
+                        <ul class="foot-links">
+                            <li>
+                                <p class="fash-txt">SITEMAP</p>
+                            </li>
+                            <li>
+                                <p>Phone</p>
+                            </li>
+                            <li>
+                                <p>(+234)817 704 7279</p>
+                            </li>
+                            <li>
+                                <p>Socials</p>
+                            </li>
+                            <li>
+                               
+                                <a href="#"><img src="assets/icons/facebook.png" alt=""></a> 
+                                <a href="#"><img src="assets/icons/linkedin.png" alt="" style=""></a> 
+                                <a href="#"><img src="assets/icons/twitter.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-md-4">
+                        <ul class="foot-links">
+                            <li>
+                                <p class="fash-txt">Address</p>
+                            </li>
+                            <li>
+                                <p>No 13, Folorunsho Street, Bada - Balogun, Ayobo, Lagos, Nigeria</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </form>
-        </footer>
+            </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="js/bootstrap.min.js"></script>
